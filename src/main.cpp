@@ -11,7 +11,13 @@ int main(int argc, char **argv)
     if (false) // make false to run unit-tests
     {
         // debug section
+        Cappuccino cappuccino;
+        cappuccino.add_side_item(new Chocolate{2});
         
+        Cappuccino copy{cappuccino};
+
+        std::cout<<copy.get_name()<<std::endl;
+        std::cout<<copy.price()<<std::endl;      
     }
     else
     {
